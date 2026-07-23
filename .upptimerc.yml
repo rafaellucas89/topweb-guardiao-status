@@ -1,0 +1,43 @@
+# Upptime — página de status pública da TopWeb (monitor "de fora", roda 100% no GitHub).
+# Docs: https://upptime.js.org/docs/configuration
+# ⚠️ Confirme `owner` (usuário/org do GitHub) antes de subir. Repo sugerido: topweb-guardiao-status.
+
+owner: rafaellucas89
+repo: topweb-guardiao-status
+
+# Serviços monitorados a cada 5 min pelos runners do GitHub (visão do mundo).
+# ⚠️ PÁGINA PÚBLICA: só entram endpoints de-cliente / já-públicos. NÃO listar ferramenta interna
+#    de NOC/monitoramento — isso é fingerprint de infra. Essas ficam no painel interno.
+#    Adicione aqui só o que um cliente já acessa (site, portal do assinante...).
+sites:
+  - name: Site TopWeb
+    url: https://www.topwebtelecom.net.br
+
+status-website:
+  name: TopWeb — Status
+  introTitle: "Status TopWeb"
+  introMessage: "Disponibilidade dos serviços TopWeb vista de fora da rede, atualizada a cada 5 minutos. Incidentes de DDoS mitigados pelo Guardião são publicados em `/incidentes`."
+  navbar:
+    - title: Status
+      href: /
+    - title: Incidentes do Guardião
+      href: https://github.com/rafaellucas89/topweb-guardiao-status/tree/master/incidentes
+    - title: GitHub
+      href: https://github.com/rafaellucas89/topweb-guardiao-status
+
+# Quem é marcado nas Issues de incidente que o Upptime abre sozinho quando um site cai.
+assignees:
+  - rafaellucas89
+
+# Sobe uma Issue de incidente já com 1 min de indisponibilidade (mais sensível que o default).
+delay: 60
+
+# Marca "degradado" quando a resposta passa desses ms (ajuste conforme a régua de vocês).
+i18n:
+  activeIncidents: Incidentes ativos
+  allSystemsOperational: Todos os serviços no ar
+  incidentReport: Relatório de incidente
+  liveStatus: Status ao vivo
+  pastIncidents: Histórico de incidentes
+  responseTime: Tempo de resposta
+  uptime: Disponibilidade

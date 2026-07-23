@@ -1,0 +1,10 @@
+{
+  "id": "2026-07-22T084800",
+  "_nota": "EXEMPLO ILUSTRATIVO do formato público. Não é registro de auditoria automático.",
+  "inicio": "2026-07-22T08:48:00+00:00",
+  "duracao_min": 17,
+  "tipo": "volumétrico",
+  "pico_faixa": "20–40 Gbps",
+  "mitigado": true,
+  "resultado": "serviço estável, sem impacto perceptível"
+}

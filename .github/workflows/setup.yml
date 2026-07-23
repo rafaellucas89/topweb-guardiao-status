@@ -1,0 +1,21 @@
+name: Setup CI
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  repository_dispatch:
+    types: [setup]
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/setup.yml"
+jobs:
+  release:
+    name: Setup Upptime
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update template & README
+        uses: upptime/uptime-monitor@master
+        with:
+          command: "update-template"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
