@@ -10,6 +10,8 @@ jobs:
     name: Check response time
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Update response time
         uses: upptime/uptime-monitor@master
         with:

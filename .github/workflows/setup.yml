@@ -13,6 +13,8 @@ jobs:
     name: Setup Upptime
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Update template & README
         uses: upptime/uptime-monitor@master
         with:

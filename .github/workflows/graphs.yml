@@ -10,6 +10,8 @@ jobs:
     name: Generate graphs
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Update graphs
         uses: upptime/uptime-monitor@master
         with:

@@ -10,6 +10,8 @@ jobs:
     name: Generate README summary
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Update summary in README
         uses: upptime/uptime-monitor@master
         with:

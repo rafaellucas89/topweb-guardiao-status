@@ -14,6 +14,8 @@ jobs:
     name: Build and deploy site
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Generate status website
         uses: upptime/uptime-monitor@master
         with:
