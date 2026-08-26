@@ -4,16 +4,16 @@
     "url": "https://www.topwebtelecom.net.br",
     "icon": "https://icons.duckduckgo.com/ip3/www.topwebtelecom.net.br.ico",
     "slug": "site-top-web",
-    "status": "down",
-    "uptime": "92.40%",
-    "uptimeDay": "86.68%",
-    "uptimeWeek": "94.02%",
-    "uptimeMonth": "91.52%",
-    "uptimeYear": "92.40%",
+    "status": "up",
+    "uptime": "92.38%",
+    "uptimeDay": "86.05%",
+    "uptimeWeek": "93.93%",
+    "uptimeMonth": "91.50%",
+    "uptimeYear": "92.38%",
     "time": 627,
     "timeDay": 640,
-    "timeWeek": 689,
-    "timeMonth": 627,
+    "timeWeek": 688,
+    "timeMonth": 628,
     "timeYear": 627,
     "dailyMinutesDown": {
       "2026-08-02": 70,
@@ -39,7 +39,8 @@
       "2026-08-22": 103,
       "2026-08-23": 22,
       "2026-08-24": 23,
-      "2026-08-25": 191
+      "2026-08-25": 193,
+      "2026-08-26": 7
     }
   }
 ]
